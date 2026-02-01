@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Online Store | Checkout</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">Online Store</a>
+      <nav class="links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="cart.html">Cart <span id="cartCount" class="badge">0</span></a>
+        <a href="checkout.html">Checkout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="padding-bottom:10px;">
+      <h1>Checkout</h1>
+      <p class="small">Demo form + confirmation. (No real payments)</p>
+    </section>
+
+    <section class="row">
+      <div class="panel">
+        <h2 style="margin-top:0;">Shipping info</h2>
+        <form id="form">
+          <div class="toolbar" style="padding-top:0;">
+            <input class="input" name="name" placeholder="Full name" required />
+            <input class="input" name="email" type="email" placeholder="Email" required />
+            <input class="input" name="address" placeholder="Address" required />
+            <input class="input" name="city" placeholder="City" required />
+          </div>
+          <button class="btn primary" type="submit">Place order</button>
+        </form>
+
+        <div id="ok" class="panel" style="display:none; margin-top:14px;">
+          <h3 style="margin:0 0 6px;">Order placed</h3>
+          <p class="small" style="margin:0;">Demo confirmation. Cart cleared.</p>
+        </div>
+      </div>
+
+      <aside class="panel">
+        <h2 style="margin:0 0 10px;">Order summary</h2>
+        <div class="line"><span>Items</span><strong id="items">—</strong></div>
+        <div class="line"><span>Total</span><strong id="total">—</strong></div>
+        <p class="small" style="margin-top:12px;">Tip: if cart is empty, go to the shop.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">Demo store — Checkout</div>
+  </footer>
+
+  <script type="module" src="./js/checkout.js"></script>
+</body>
+</html>

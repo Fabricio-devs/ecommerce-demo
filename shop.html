@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Online Store | Shop</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">Online Store</a>
+      <nav class="links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="cart.html">Cart <span id="cartCount" class="badge">0</span></a>
+        <a href="checkout.html">Checkout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="padding-bottom:8px;">
+      <h1>Shop</h1>
+      <p>Filter by category, search by name, and add items to the cart.</p>
+
+      <div class="toolbar">
+        <input id="q" class="input" placeholder="Buscar producto..." />
+        <select id="cat" class="select">
+          <option value="">All categories</option>
+        </select>
+        <select id="sort" class="select">
+          <option value="featured">Featured</option>
+          <option value="price_asc">Price: low to high</option>
+          <option value="price_desc">Price: high to low</option>
+          <option value="title_asc">Title: A-Z</option>
+        </select>
+      </div>
+    </section>
+
+    <section>
+      <div id="grid" class="grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">Demo store — Shop</div>
+  </footer>
+
+  <script type="module" src="./js/shop.js"></script>
+</body>
+</html>
